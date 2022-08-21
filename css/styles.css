@@ -45,6 +45,10 @@ ul {
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
 
 .auth-nav .auth:hover,
 .auth-nav .auth:focus {
@@ -62,7 +66,7 @@ ul {
 /* Index main content */
 
 .main-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -74,7 +78,7 @@ text-transform: uppercase;
 }
 
 .button {
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -141,9 +145,7 @@ footer {
 
 .address-list a {
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: inherit;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -152,9 +154,7 @@ footer {
 
 .address-list .address-link {
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: inherit;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -179,7 +179,7 @@ footer {
 }
 
 .buttons {
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
 color: var(--main-dark-color);
 background-color: var(--portfolio-buttons-color);
 }

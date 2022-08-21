@@ -1,7 +1,7 @@
 body {
-  font-family: 'Roboto' 'Raleway' sans-serif;
-  background-color: F5F5F5;
-  color: 757575;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F5F5F5;
+  color: var(--main-text-color);
 }
 ul {
   list-style: none;
@@ -10,16 +10,20 @@ ul {
   --accent-color: rgba(33, 150, 243, 1);
   --main-dark-color: rgba(33, 33, 33, 1);
   --main-text-color: rgba(117, 117, 117, 1);
+  --title-text-color: rgba(255, 255, 255, 1);
+  --bgc-dark: rgba(47, 48, 58, 1);
+  --button-color: rgba(33, 150, 243, 1);
+  --portfolio-buttons-color: rgba(245, 244, 250, 1);
 }
 
 /* Header */
 
 .logo {
   text-decoration: none;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 1);
 }
@@ -28,17 +32,19 @@ ul {
 }
 
 .site-nav .link {
+    text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--main-dark-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: rgba(33, 150, 243, 1);
+  color: var(--accent-color);
 }
+
 
 .auth-nav .auth:hover,
 .auth-nav .auth:focus {
@@ -46,28 +52,34 @@ ul {
 }
 
 .auth {
+    text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
 /* Index main content */
 
 .main-title {
+  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(47, 48, 58, 1);
+  line-height: 1.4;
+  text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+  color: var(--title-text-color);
+  background-color: var(--bgc-dark);
 }
 
 .button {
+    font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  color: rgba(255, 255, 255, 1);
-  background-color: var(--accent-color);
+  line-height: 1.9;
+  color: var(--title-text-color);
+  background-color: var(--button-color)
 }
 .button {
   cursor: pointer;
@@ -76,7 +88,7 @@ ul {
 .list-benefits {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-dark-color);
@@ -84,14 +96,14 @@ ul {
 
 .list-description {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   color: var(--main-text-color);
 }
 
 .title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-dark-color);
@@ -100,77 +112,86 @@ ul {
 .name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--main-dark-color);
 }
 
 .position {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
 /* Footer */
 footer {
-  background-color: rgba(47, 48, 58, 1);
+  background-color: var(--bgc-dark);
 }
 
 .logo-footer {
   text-decoration: none;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 1);
+  color: var(--title-text-color);
 }
 
 .address-list a {
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 1);
+  color: var(--title-text-color);
 }
 
 .address-list .address-link {
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 /* Portfolio */
 
-.button-portfolio {
+
+  .button-portfolio {
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   letter-spacing: 0.03em;
-  color: rgba(33, 33, 33, 1);
-}
+  text-align: center;
+  letter-spacing: 0.03em;
+} 
 .button-portfolio :hover,
 .button-portfolio :focus {
-  color: rgba(255, 255, 255, 1);
+  color: var(--title-text-color);
   background-color: var(--accent-color);
 }
-.button-portfolio {
-  cursor: pointer;
+
+.buttons {
+    font-family: 'Roboto', sans-serif;
+color: var(--main-dark-color);
+background-color: var(--portfolio-buttons-color);
+}
+
+.buttons {
+    cursor: pointer;
 }
 
 .projects {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-dark-color);
 }
@@ -178,7 +199,7 @@ footer {
 .project-type {
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }

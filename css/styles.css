@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   color: var(--main-text-color);
 }
 ul {
@@ -32,7 +32,7 @@ ul {
 }
 
 .site-nav .link {
-    text-decoration: none;
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -46,9 +46,8 @@ ul {
 }
 
 .site-nav .link.current {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
-
 
 .auth-nav .auth:hover,
 .auth-nav .auth:focus {
@@ -56,7 +55,7 @@ ul {
 }
 
 .auth {
-    text-decoration: none;
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -71,19 +70,20 @@ ul {
   font-size: 44px;
   line-height: 1.4;
   text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--title-text-color);
   background-color: var(--bgc-dark);
 }
 
 .button {
-    font-family: inherit;
+  font-family: inherit;
   font-weight: 700;
+  letter-spacing: 0.06em;
   font-size: 16px;
   line-height: 1.9;
   color: var(--title-text-color);
-  background-color: var(--button-color)
+  background-color: var(--button-color);
 }
 .button {
   cursor: pointer;
@@ -146,6 +146,8 @@ footer {
 .address-list a {
   text-decoration: none;
   font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -164,28 +166,26 @@ footer {
 /* Portfolio */
 
 
-  .button-portfolio {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  text-align: center;
-  letter-spacing: 0.03em;
-} 
-.button-portfolio :hover,
-.button-portfolio :focus {
+.buttons:hover,
+.buttons:focus {
   color: var(--title-text-color);
   background-color: var(--accent-color);
 }
 
 .buttons {
-    font-family: inherit;
-color: var(--main-dark-color);
-background-color: var(--portfolio-buttons-color);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-dark-color);
+  background-color: var(--portfolio-buttons-color);
 }
 
 .buttons {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .projects {
